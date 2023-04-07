@@ -1,11 +1,11 @@
 import React from "react";
+import HeaderLogo from "../images/jurassic-world.jpg";
 
 export const Header = () => {
   return (
-    <div>
-      <header>
-        <h1>D-Ref</h1>
-      </header>
-    </div>
+    <header className="header">
+      <h1>D-REF</h1>
+      <img className="header-logo" src={HeaderLogo} alt="logo" />
+    </header>
   );
 };
