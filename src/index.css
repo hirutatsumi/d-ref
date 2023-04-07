@@ -1,22 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP");
+@font-face {
+  font-family: "jurassic park";
+  src: url("./fonts/Jurassic_Park.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  font-size: 40px;
-  color: rgba(255, 219, 174, 0.799);
-  font-weight: 700;
-  text-shadow: 1px 1px 1px white;
+  font-family: "jurassic park", sans-serif;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.799);
+  font-weight: 400;
 }
 
-header {
+.header-logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  font-size: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header {
+  display: flex;
+  flex-flow: row;
+  column-gap: 24px;
+  align-items: center;
   text-align: left;
   background-color: black;
-  padding: 5px 5%;
+  padding: 0px 5%;
 }
 
 .app {
   height: 100vh;
-  background-image: url("/images/jungle.jpg");
+  background-image: url("./images/jungle.jpg");
+}
+
+.dinosaurReferenceCard {
+  background-color: whitesmoke;
+  width: 200px;
+  padding: 10px 25px;
+  margin: 45px 4%;
+}
+
+.button {
+  width: 200px;
+  height: 20px;
+  border: none;
+  text-align: left;
+  background-color: whitesmoke;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.input {
+  font-family: "Noto Sans JP", sans-serif;
 }
