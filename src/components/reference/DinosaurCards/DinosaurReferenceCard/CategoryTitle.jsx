@@ -26,7 +26,7 @@ export const CategoryTitle = () => {
       <form onSubmit={handleSubmit}>
         {isClicked ? (
           <input
-            className="input"
+            className="titleInput"
             onChange={(event) => {
               handleChange(event);
             }}
