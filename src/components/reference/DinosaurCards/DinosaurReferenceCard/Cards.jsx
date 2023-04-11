@@ -1,17 +1,14 @@
 import React from "react";
 import { Card } from "./Cards/Card";
-import { CardDeleteButton } from "./Cards/CardDeleteButton";
 
-export const Cards = ({ dinosaurList }) => {
-  // console.log(dinosaurList);
+export const Cards = ({ dinosaurList, setDinosaurList }) => {
   return (
     <div>
-      {dinosaurList.map((dinosaur) => {
+      {dinosaurList.map((dinosaur, index) => {
         return (
-          <>
-            <Card dinosaur={dinosaur} />
-            <CardDeleteButton />
-          </>
+          <div className="cards" key={index}>
+            <Card dinosaur={dinosaur} setDinosaurList={setDinosaurList} />
+          </div>
         );
       })}
     </div>
